@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Suman Gagoriya | E- Portfolio</title>
+    <style>
+        :root {
+            --primary-navy: #1a2a6c;
+            --ncc-red: #b21f1f;
+            --gold: #fdbb2d;
+            --bg-light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--bg-light);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header & Hero */
+        header {
+            background: linear-gradient(135deg, var(--primary-navy), #2a4858);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Layout Containers */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-navy);
+            border-left: 6px solid var(--ncc-red);
+            padding-left: 15px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+
+        /* Grid Systems */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+
+        /* Gallery Styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        /* Media Assessment Section */
+        .media-box {
+            background: #000;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        video, iframe {
+            width: 100%;
+            max-width: 900px;
+            height: 500px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            background: #222;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="profile.png" alt="Aditya Suman Gagoriya" class="hero-img">
+    <h1>Aditya Suman Gagoriya</h1>
+    <p>Aspiring AI Engineer | NCC Sergeant | Machine Learning Specialist</p>
+    <p style="font-style: italic; opacity: 0.9; max-width: 600px; margin: 15px auto;">
+        “Merging military discipline with technical innovation to build the next generation of AI solutions.”
+    </p>
+</header>
+
+<div class="container">
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Computer Science and Engineering student specializing in AI & ML at Graphic Era Hill University. My journey is defined by a unique blend of technical rigor and the leadership values instilled in me as a Sergeant in the 29 UK Battalion, NCC. I am passionate about solving complex problems using Computer Vision, NLP, and Generative AI.</p>
+    </section>
+
+    <section id="ncc">
+        <h2>NCC & Leadership Achievements</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>AITSC 2025 | Delhi Cantt</h3>
+                <ul>
+                    <li>🥈 2nd Position: SD Service Shooting.</li>
+                    <li>🥉 3rd Position: Uttarakhand Directorate overall in Firing.</li>
+                    <li>🏅 7th Position: National-level combined events ranking.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Leadership & Discipline</h3>
+                <p>Sergeant (SGT) at 29 UK Battalion, Dehradun. Successfully completed Basic and Advance Leadership Camps.</p>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="camp.png" alt="NCC Camp">
+            <img src="Appriciated by Prof. (Dr.) Narpinder Singh for NCC achievement at National level.png" alt="National Recognition">
+            <img src="Half marathon.jpeg" alt="Endurance Running">
+            <img src="Marathon 5km.jpeg" alt="Fitness Achievement">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Key Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>ERP Lite</h3>
+                <p>Web-based attendance calculator for students to manage university requirements.</p>
+            </div>
+            <div class="card">
+                <h3>Brain Tumor Detection</h3>
+                <p>Deep learning model using CNNs and MRI scans to detect and classify tumors.</p>
+            </div>
+            <div class="card">
+                <h3>GreenSched Pro</h3>
+                <p>Energy-aware CPU scheduling simulator comparing power-efficient algorithms.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="assessments">
+        <h2>Assessments </h2>
+        <p>Below are the verified assessments showcasing technical and leadership evaluations.</p>
+        
+        <h3>Self Introduction</h3>
+        <div class="media-box">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <h3 style="margin-top:40px;">ESSAY</h3>
+        <div class="media-box">
+            <!-- Using assessment.pdf as per the generic name in your screenshot -->
+            <iframe src="assessment.pdf"></iframe>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>B.Tech in CSE (AI & ML)</strong> - Graphic Era Hill University (2023 – 2027)</li>
+            <li><strong>Senior Secondary (CBSE)</strong> - KV Jamnagar (2022)</li>
+            <li><strong>Intermediate (CBSE)</strong> - KV Jamnagar (2020)</li>
+        </ul>
+    </section>
+
+</div>
+
+<div class="footer">
+    <p>&copy; 2026 SGT Aditya Suman Gagoriya. All rights reserved.</p>
+    <p>Location: Dehradun, Uttarakhand</p>
+</div>
+
+<script>
+    // JavaScript for simple scroll effects
+    window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(sec => {
+            const top = window.scrollY;
+            const offset = sec.offsetTop - 500;
+            if (top >= offset) {
+                sec.style.opacity = '1';
+                sec.style.transform = 'translateY(0)';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
